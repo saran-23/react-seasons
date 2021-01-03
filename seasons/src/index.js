@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
 import "semantic-ui-css/semantic.min.css";
+import Spinner from './Spinner';
 
 class App extends React.Component {
     state = { lat: null, errorMessage: '' };
@@ -24,7 +25,7 @@ class App extends React.Component {
         //     return <div>Loading</div>
         // }
 
-        return <div>Loading</div>;
+        return <Spinner />;
 
     };
 }
